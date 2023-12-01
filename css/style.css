@@ -1,0 +1,10 @@
+nav a {
+    text-decoration: none;
+    color: darkblue;
+}
+
+nav a:hover {
+    color: aquamarine;
+    background-color: aqua;
+    font-weight: bold;
+}
