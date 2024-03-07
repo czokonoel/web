@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hu">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JAVASCRIPT</title>
+    <title>JavaScript</title>
 </head>
 <body>
     <nav>
@@ -17,13 +17,26 @@
         <a href="szamologep.html">SZAMOLOGEP</a> |
         <a href="szinvalaszto.html">SZINVALASZTO</a> |
         </nav>
-    <input type="button" value="FELUGRÓABLAK" onclick="katt()">
-    <script>
-        function katt() {
-            var nev;
-            nev = prompt("ADD MEG A NEVED!");
-            alert(nev);
+<input type="button" value="felugró ablak" onclick="katt()">
+
+<script>
+    function katt() {
+        let szam1 , szam2 , eredmeny ;
+
+        szam1 = Number(prompt("Első szám")) ;
+        while(Number.isNaN(szam1)) {
+            szam1 = Number(prompt("Ez nem szam")) ;
         }
-    </script>
+
+        szam2 = Number (prompt("Masodik  szam")) ;
+        while(Number.isNaN(szam2)) {
+         szam1 = Number(prompt("Ez nem szam")) ;
+        }
+
+        eredmeny = szam1 + szam2;
+
+        alert("A ketto szam(ok) összege:" + eredmeny)
+    }
+</script>
 </body>
 </html>

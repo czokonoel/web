@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hu">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JAVASCRIPT</title>
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
 </head>
 <body>
     <nav>
@@ -17,13 +17,13 @@
         <a href="szamologep.html">SZAMOLOGEP</a> |
         <a href="szinvalaszto.html">SZINVALASZTO</a> |
         </nav>
-    <input type="button" value="FELUGRÓABLAK" onclick="katt()">
+    <input type="color" name="szin" onchange="asd()" id="szin">
     <script>
-        function katt() {
-            var nev;
-            nev = prompt("ADD MEG A NEVED!");
-            alert(nev);
-        }
+
+function asd() {
+    document.body.style.backgroundColor = szin.value
+}
+
     </script>
 </body>
 </html>
